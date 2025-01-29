@@ -46,10 +46,25 @@
       max-width: 100%; 
       height: auto;
     }
+    .logo-container {
+    display: flex;          /* Arrange logos side by side */
+    justify-content: center; /* Center logos horizontally */
+    align-items: center;     /* Align logos vertically */
+    gap: 20px;              /* Space between logos */
+    margin: 20px 0;         /* Add spacing at the top */
+    }
+    .logo {
+        height: 50px; /* Set a small, equal height */
+        width: auto;  /* Maintain aspect ratio */
+    }
   </style>
 </head>
 <body>
   <header>
+    <div class="logo-container">
+    <img src="mongodb.png" alt="MongoDB Logo" class="logo">
+    <img src="pwc.png" alt="PwC Logo" class="logo">
+    </div>
     <h1>MongoDB Digital Onboarding Guidance</h1>
     <p>
       This page helps guide PwC application teams throughout their MongoDB development 
